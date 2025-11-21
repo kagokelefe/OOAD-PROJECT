@@ -1,0 +1,93 @@
+/* Professional, clean stylesheet for the banking app */
+
+/* Root / global styles */
+.root {
+    -fx-font-family: "Segoe UI", Roboto, Arial;
+    font-family: "Segoe UI", Roboto, Arial; /* standard property for editor compatibility */
+    -fx-font-size: 13px;
+    font-size: 13px;
+    -fx-background-color: #f4f6f8; /* subtle neutral background */
+}
+
+/* Layout container used around forms and dialogs */
+.container {
+    -fx-padding: 16;
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #e6e9ee;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(16,24,32,0.06), 8, 0.3, 0, 2);
+}
+
+.header-label {
+    -fx-font-size: 20px;
+    font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #0b4a57; /* dark teal/navy for headings */
+}
+
+/* Table styling */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 8;
+}
+
+/* Button variants */
+.button {
+    -fx-cursor: hand;
+}
+
+.btn-primary {
+    -fx-background-color: linear-gradient(#0b6e6f, #085b5c);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12 6 12;
+}
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(#12807f, #0b6e6f);
+}
+
+.btn-secondary {
+    -fx-background-color: linear-gradient(#ffffff, #f3f5f7);
+    -fx-text-fill: #274155;
+    -fx-border-color: #dbe2e8;
+    -fx-border-radius: 6;
+    -fx-padding: 6 12 6 12;
+}
+.btn-secondary:hover {
+    -fx-background-color: linear-gradient(#f8fafb, #eef3f6);
+}
+
+.btn-danger {
+    -fx-background-color: linear-gradient(#e04b3f, #c0392b);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12 6 12;
+}
+.btn-danger:hover {
+    -fx-background-color: linear-gradient(#ec6a5d, #e04b3f);
+}
+
+/* Form labels and helper text */
+.form-label {
+    -fx-font-size: 12px;
+    font-size: 12px;
+    -fx-text-fill: #24323a;
+}
+
+.small-note {
+    -fx-font-size: 11px;
+    font-size: 11px;
+    -fx-text-fill: #6b7780;
+}
+
+/* Utility spacing */
+.spaced { -fx-padding: 8; }
+
+/* ensure the app window background is consistent */
+.app-root {
+    -fx-background-color: #f4f6f8;
+    background-color: #f4f6f8;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransferDialogController" prefWidth="420" prefHeight="220">
+    <children>
+        <VBox spacing="8.0" AnchorPane.topAnchor="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.bottomAnchor="8" styleClass="container">
+            <Label text="Transfer funds" styleClass="header-label" />
+            <GridPane hgap="8" vgap="8">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="35" />
+                    <ColumnConstraints percentWidth="65" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                </rowConstraints>
+                <Label text="From:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <Label fx:id="lblFromAccount" text="-" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+                <Label text="To (account #):" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <VBox spacing="4" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                    <ChoiceBox fx:id="cbToAccounts" />
+                    <TextField fx:id="tfToAccount" promptText="Or enter account #" />
+                </VBox>
+
+                <Label text="Amount:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextField fx:id="tfAmount" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+                <Label text="Note:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                <TextArea fx:id="taNote" prefRowCount="2" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+            </GridPane>
+
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button fx:id="btnCancel" text="Cancel" />
+                <Button fx:id="btnTransfer" text="Transfer" styleClass="btn-primary" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.LoginController" spacing="10.0" prefWidth="320.0" prefHeight="250.0" alignment="CENTER">
+    <children>
+        <Label text="Banking App Login" />
+        <VBox spacing="5.0">
+            <Label text="Username:" />
+            <TextField fx:id="usernameField" prefWidth="272.0" />
+        </VBox>
+        <VBox spacing="5.0">
+            <Label text="Password:" />
+            <PasswordField fx:id="passwordField" prefWidth="272.0" />
+        </VBox>
+        <HBox spacing="10.0" alignment="CENTER">
+            <Button fx:id="loginButton" onAction="#onLogin" text="Login" />
+            <Button fx:id="registerButton" onAction="#onRegister" text="Register" />
+        </HBox>
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+</VBox>

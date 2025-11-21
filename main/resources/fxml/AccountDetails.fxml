@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="8.0" prefWidth="400.0" prefHeight="300.0">
+    <children>
+        <Label text="Account Details" />
+        <Label text="Account Number: " />
+        <Label text="Balance: " />
+    </children>
+</VBox>

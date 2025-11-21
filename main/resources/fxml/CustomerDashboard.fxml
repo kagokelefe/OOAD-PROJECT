@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.CustomerDashboardController" spacing="8.0" prefWidth="600.0" prefHeight="400.0">
+    <children>
+        <Label text="Customer Dashboard" />
+        <TableView fx:id="accountsTable">
+            <columns>
+                <TableColumn fx:id="colAccountNo" text="Account" />
+                <TableColumn fx:id="colType" text="Type" />
+                <TableColumn fx:id="colBalance" text="Balance" />
+            </columns>
+        </TableView>
+        <HBox spacing="10.0">
+            <Button fx:id="withdrawButton" text="Withdraw" onAction="#onWithdraw" />
+            <Button fx:id="depositButton" text="Deposit" onAction="#onDeposit" />
+            <Button fx:id="transferButton" text="Transfer" onAction="#onTransfer" />
+            <Button fx:id="closeButton" text="Close Account" onAction="#onCloseAccount" />
+            <Button fx:id="requestAcctButton" text="Request Account" onAction="#onRequestAccount" />
+            <Button fx:id="logoutButton" text="Logout" onAction="#onLogout" />
+        </HBox>
+    </children>
+</VBox>

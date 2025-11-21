@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RequestAccountDialogController" prefWidth="380" prefHeight="220">
+    <children>
+        <VBox spacing="8.0" AnchorPane.topAnchor="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.bottomAnchor="8" styleClass="container">
+            <Label text="Request New Account" styleClass="header-label" />
+            <GridPane hgap="8" vgap="8">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="40" />
+                    <ColumnConstraints percentWidth="60" />
+                </columnConstraints>
+                <Label text="Account type:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <ChoiceBox fx:id="typeChoice" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+                <Label text="Initial deposit:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="initialDepositField" promptText="0.00" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+                <Label text="Note (optional):" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextArea fx:id="noteArea" prefRowCount="2" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+                <Label text="Employer (for Cheque):" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                <VBox fx:id="employerBox" spacing="4" GridPane.rowIndex="3" GridPane.columnIndex="1" visible="false" managed="false">
+                    <TextField fx:id="employerNameField" promptText="Employer name" />
+                    <TextField fx:id="employerAddressField" promptText="Employer address" />
+                </VBox>
+            </GridPane>
+
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button fx:id="btnCancel" text="Cancel" />
+                <Button fx:id="btnRequest" text="Request" styleClass="btn-primary" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
